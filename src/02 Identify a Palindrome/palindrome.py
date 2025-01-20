@@ -9,9 +9,8 @@ def is_palindrome(strtext):
   cleanstring = re.sub(r'[^a-zA-Z0-9]', '', strtext)
   revstring = cleanstring[::-1]
 
-  return True if cleanstring.lower() == revstring.lower() else False
+  return cleanstring.lower() == revstring.lower()
     
-
 print(is_palindrome('Go hang a salami, I’m a lasagna hog.'))
 print(is_palindrome('hello world'))
 print(is_palindrome(2112))
